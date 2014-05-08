@@ -91,6 +91,7 @@ git clone https://github.com/joyent/node.git && cd node
 git checkout v0.10.26
 mkdir ~/opt && mkdir ~/opt/node
 ./configure --prefix=~/opt/node
+sudo apt-get install make
 make
 make install
 ```
