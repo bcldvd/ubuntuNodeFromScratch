@@ -85,14 +85,7 @@ Add your infos accordingly, example with my infos :
 ## Node
 
 ```
-sudo apt-get install g++
-cd ~/workspace
-git clone https://github.com/joyent/node.git && cd node
-git checkout v0.10.26
-mkdir ~/opt && mkdir ~/opt/node
-./configure --prefix=~/opt/node
-sudo apt-get install make
-make
-make install
+sudo apt-get install nodejs
+sudo apt-get install npm
 ```
 
