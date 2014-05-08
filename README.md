@@ -9,10 +9,12 @@
 
 ## Prerequisite
 
-Take control of the  `root` user
+Take control of the  `root` user & create a workspace folder
 
 ```
 sudo passwd
+mkdir ~/workspace
+sudo ln -s ~/workspace/ /workspace
 ```
 
 ## SSH
@@ -20,8 +22,8 @@ sudo passwd
 Install Open-SSH in order to ssh on your server and work from your current machine's terminal if the ubuntu server is on a virtual machine (Allowing you to have the correct keyboard layout and do copy and paste actions in the terminal)
 
 ```
-apt-get install openssh-client
-apt-get install openssh-server
+sudo apt-get install openssh-client
+sudo apt-get install openssh-server
 ```
 
 ## FTP
@@ -43,7 +45,7 @@ write_enable=YES
 Save it (`Ctrl+X` with nano) and restart the server
 
 ```
-service vsftpd restart
+sudo service vsftpd restart
 ```
 
 ## Node
