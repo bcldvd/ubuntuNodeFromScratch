@@ -48,6 +48,40 @@ Save it (`Ctrl+X` with nano) and restart the server
 sudo service vsftpd restart
 ```
 
+## GIT
+
+### Installation
+
+```
+sudo apt-get install git
+```
+
+### Configuration
+
+```
+nano ~/.gitconfig
+```
+
+Add your infos accordingly, example with my infos : 
+
+```
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[user]
+  name = David Boclé
+  email = bcldvd@gmail.com
+[alias]
+  ci = commit
+  co = checkout
+  st = status
+  br = branch
+[github]
+  user = bcldvd
+```
+
+
 ## Node
 
 ```
